@@ -11,6 +11,7 @@
     if (preg_match('/[^\d-]/', $tel)) $error .= '電話番号が正しくありません。<br>';
     if (!$error) {
       $pdo = connect();
+      $pdo->query('SET NAMES utf8');
       $body = "商品が購入されました。\n\n"
        . "お名前: $name\n"
        . "ご住所: $address\n"
@@ -26,7 +27,9 @@
       }
       $from = "moriri600318@yahoo.co.jp";
       $to = "moriri600318@yahoo.co.jp";
-      mb_send_mail($to, "購入メール", $body, "From: $from");
+      mb_language("ja");
+      mb_internal_encoding("UTF-8");
+      mb_send_mail($to, "購入メール", $body, "From: $from",$text);
       $_SESSION['cart'] = null;
       require 't_buy_complete.php';
       exit();

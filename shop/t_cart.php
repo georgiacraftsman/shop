@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>カート | Noodle Shop</title>
+<title>カート | 中華料理　油　デリバリー便</title>
 <link rel="stylesheet" href="shop.css">
 </head>
 <body>
@@ -20,8 +20,8 @@
   <tr><td colspan='2'> </td><td><strong>合計</strong></td><td><?php echo $sum ?> 円</td></tr>
 </table>
 <div class="base">
-  <a href="index.php">お買い物に戻る</a>　
-  <a href="cart_empty.php">カートを空にする</a>　
+  <a href="index.php">お買い物に戻る</a>
+  <a href="cart_empty.php">カートを空にする</a>
   <a href="buy.php">購入する</a>
 </div>
 </body>
