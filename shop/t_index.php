@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="shop.css">
     </head>
     <body>
-       <div align="center"><img src="images/logo (2).png" width="400px";></div>
+        <div align="center"><img src="images/logo (2).png" width="400px";></div>
 
 
         <table>
@@ -42,16 +42,25 @@
             </ul>
             <div align="" style="width: 30%; display: inline-block;">
                 <form action="session1.php" method = "post"></form>
-                    ユーザーネーム<input type ="text" name="username" value = ""><br>  
-                    パスワード<input type = "text" name="pass" value = "">
-                    <input type="submit" name ="login" value = "ログイン"><br> 
+                ユーザーネーム<input type ="text" name="username" value = ""><br>  
+                パスワード<input type = "text" name="pass" value = "">
+                <input type="submit" name ="login" value = "ログイン"><br> 
             </div>      
-  </body>
+
+    </body>
+    <form method="post" action="chat.php">
+        <p>名前</p>　　　　<input type="text" name="name">
+        <p>メッセージ</p>　<input type="text" name="message">
+
+        <button name="send" type="submit">送信</button>
+
+        チャット履歴
+    </form>
+
+
+
 </table>
-       
-       ser
-       
-       
+
 </html><?php
 ini_set('display_errors', "On");
 ?>

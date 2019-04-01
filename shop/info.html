@@ -2,38 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
-         <div align="center"><img src="images/logo (2).png" width="400px";></div>
-           <ul id="nav" style="display: inline-block;">
-                <li><a href="top.php">TOP</a></li>
-                <li><a href="index.php">MENU</a></li>
-                <li><a href="info.html">INFO</a></li>
-            </ul>
-            <div align="" style="width: 30%; display: inline-block;">
-                <form action="session1.php" method = "post"></form>
-                    ユーザーネーム<input type ="text" name="username" value = ""><br>
-                    パスワード<input type = "text" name="pass" value = "">
-                    <input type="submit" name ="login" value = "ログイン"><br></div>
-         <title>中華料理　油</title>
+        <title>中華料理　油</title>
         <link rel="stylesheet" href="shop.css">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
-<body>
-    <div align="center">
-        <H1>主要スタッフ</H1>
-        <p>シェフ・ド・キュイジーヌ:エリカ</p>
-        <img src="images/chef.jpg">
-        <p>スー・シェフ:ビンビン</p>
-        <img src="images/chefb.png">
-        
-        <h1>お問い合わせ</h1>
-    <form action="confirmation.php" method="post">
-        名前：<input type="text" name="name" size="50" value="" ><br>
-        メールアドレス：<input type="text" name="mail" size="50" value=""><br>
-        問合せ内容：<br>
-        <textarea name="inquiry" cols="50" rows="5"></textarea><br>
-        <br>
-        <input type="submit" value="送信">
-    </form>
-    </div>
-</body>
+    </head>
+    <body>
+        <div align="center"><img src="images/logo (2).png" width="400"></div>
+        <ul id="nav" style="display: inline-block;">
+            <li><a href="top.php">TOP</a></li>
+            <li><a href="index.php">MENU</a></li>
+            <li><a href="info.html">INFO</a></li>
+        </ul>
+        <div align="" style="width: 30%; display: inline-block;">
+            <form action="session1.php" method = "post"></form>
+            ユーザーネーム<input type ="text" name="username" value = ""><br>
+            パスワード<input type = "text" name="pass" value = "">
+            <input type="submit" name ="login" value = "ログイン"><br></div>
+        <div align="center">
+            <H1>主要スタッフ</H1>
+            <div class="staff" >
+                <p>シェフ・ド・キュイジーヌ:エリカ<p>
+                <p>得意料理：杏仁豆腐<p>
+                    <img src="images/chef.jpg">
+            </div>
+            <div class="staff" >
+                <p>スー・シェフ:ビンビン<p>
+                    <p>得意料理：汁あり坦々麺<p>
+                    <img src="images/chefb.png">
+            </div>
+            <div align="center">
+                <h1>お問い合わせ</h1>
+                <form action="confirmation.php" method="post">
+                    名前：<input type="text" name="name" size="50" value="" ><br>
+                    メールアドレス：<input type="text" name="mail" size="50" value=""><br>
+                    問合せ内容：<br>
+                    <textarea name="inquiry" cols="50" rows="5"></textarea><br>
+                    <br>
+                    <input type="submit" value="送信">
+                </form>
+            </div>
+    </body>
 </html>
