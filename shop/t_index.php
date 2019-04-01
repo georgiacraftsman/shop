@@ -48,17 +48,7 @@
             </div>      
 
     </body>
-    <form method="post" action="chat.php">
-        <p>名前</p>　　　　<input type="text" name="name">
-        <p>メッセージ</p>　<input type="text" name="message">
-
-        <button name="send" type="submit">送信</button>
-
-        チャット履歴
-    </form>
-
-
-
+ 
 </table>
 
 </html><?php
